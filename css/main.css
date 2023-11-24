@@ -131,4 +131,148 @@ img {
   .open-modal .header__navlink {
     display: flex;
   }
+}
+.footer {
+  padding: 24px 0px;
+  background-color: #33323D;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__left-section {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 48px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 42px;
+}
+
+.footer__nav-link {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__right-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__right-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 56px 0;
+  }
+  .footer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__left-section {
+    flex-direction: column;
+  }
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+  }
+  .footer__item:not(:last-child) {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+}
+.main {
+  background-image: url(../../img/index-back.png);
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-position: center;
+}
+
+.main__site {
+  position: relative;
+  height: 600px;
+}
+
+.main__hero {
+  position: absolute;
+  top: 40.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 55px 55px 0px 0;
+  background-color: #FAFAFA;
+  max-width: 445px;
+  width: 100%;
+}
+
+.main__heading {
+  margin: 0;
+  margin-bottom: 53px;
+  max-width: 390px;
+  width: 100%;
+  font-family: Ibarra Real Nova;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.446px;
+}
+
+.main__hero-btn {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: none;
+  max-width: 200px;
+  width: 100%;
+  background: #203A4C;
+}
+
+.main__btn-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Public Sans;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px) {
+  .main__hero {
+    position: absolute;
+    top: 100%;
+    padding: 24px 0px 0px 0;
+    background-color: #FAFAFA;
+    max-width: 445px;
+    width: 100%;
+  }
+  .main__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,73 @@
+.main {
+    background-image: url(../../img/index-back.png);
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-position: center;
+}
+
+.main__site {
+    position: relative;
+    height: 600px;
+}
+
+.main__hero {
+    position: absolute;
+    top: 40.6%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 55px 55px 0px 0;
+    background-color: $primary-background;
+    max-width: 445px;
+    width: 100%;
+}
+
+.main__heading {
+    margin: 0;
+    margin-bottom: 53px;
+    max-width: 390px;
+    width: 100%;
+    font-family: Ibarra Real Nova;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.446px;
+}
+
+.main__hero-btn {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border: none;
+    max-width: 200px;
+    width: 100%;
+    background: #203A4C;
+}
+
+.main__btn-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Public Sans;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 500px){ 
+    .main__hero {
+        position: absolute;
+        top: 100%;
+        padding: 24px 0px 0px 0;
+        background-color: $primary-background;
+        max-width: 445px;
+        width: 100%;
+    }
+    
+.main__heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+}
+}
