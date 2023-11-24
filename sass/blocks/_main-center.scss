@@ -41,10 +41,14 @@
     width: 100%;
 }
 
-.btn {
+.main__center-btn {
     margin-bottom: 46px;
+}
+
+.btn {
     padding: 17px 34px;
     background-color: transparent;
+    white-space: nowrap;
     color: $primary-color;
     font-size: 12px;
     font-weight: 400;

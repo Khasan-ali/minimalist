@@ -319,10 +319,14 @@ img {
   width: 100%;
 }
 
-.btn {
+.main__center-btn {
   margin-bottom: 46px;
+}
+
+.btn {
   padding: 17px 34px;
   background-color: transparent;
+  white-space: nowrap;
   color: #33323D;
   font-size: 12px;
   font-weight: 400;
@@ -371,5 +375,44 @@ img {
 @media only screen and (max-width: 266px) {
   .main__center {
     margin-top: 400px;
+  }
+}
+.main__bottom {
+  display: flex;
+  align-items: center;
+  padding: 75px 0 150px;
+}
+
+.main__bottom-heading {
+  margin: 0;
+  max-width: 350px;
+  width: 100%;
+  color: #33323D;
+  font-family: Ibarra Real Nova;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+}
+
+.main__bottom-line {
+  margin: 0 32px;
+  opacity: 0.15;
+  background: #33323D;
+  max-width: 534px;
+  width: 100%;
+  height: 1px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main__bottom {
+    flex-direction: column;
+    padding: 20px 0 80px;
+  }
+  .main__bottom-heading {
+    margin-bottom: 40px;
+  }
+  .main__bottom-line {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
