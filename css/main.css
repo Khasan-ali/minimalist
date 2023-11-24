@@ -1,1 +1,138 @@
-/*# sourceMappingURL=main.css.map */
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Public Sans", sans-serif;
+  color: #33323D;
+  background-color: #FAFAFA;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  max-width: 1151px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 64px 0;
+}
+
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 43px;
+}
+
+.header__nav-link {
+  color: #33323D;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header__nav-link:hover {
+  opacity: 0.8;
+}
+
+.active {
+  color: #5FB4A2;
+}
+
+.header__btn {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 690px) {
+  .header {
+    padding: 73px 0 56px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    padding: 32px 0 40px;
+  }
+  .header__section {
+    position: relative;
+  }
+  .header__navlink {
+    color: #FAFAFA;
+  }
+  .header__navlink {
+    display: none;
+  }
+  .header__btn {
+    display: inline;
+  }
+  .open-modal .header__navlink {
+    position: absolute;
+    padding: 100px 50px;
+    background-color: dimgray;
+    border-radius: 10px;
+    color: #FAFAFA;
+    white-space: nowrap;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .open-modal .active {
+    color: #FAFAFA;
+  }
+  .open-modal .header__list {
+    flex-direction: column;
+  }
+  .open-modal .header__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .open-modal .header__navlink {
+    display: flex;
+  }
+}/*# sourceMappingURL=main.css.map */
