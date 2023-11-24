@@ -126,6 +126,7 @@ img {
     flex-direction: column;
   }
   .open-modal .header__item:not(:last-child) {
+    margin-bottom: 20px;
     margin-right: 0;
   }
   .open-modal .header__navlink {
@@ -360,6 +361,10 @@ img {
     width: 100%;
     max-height: 370px;
     height: 100%;
+  }
+  .main__center-right {
+    margin-top: 50px;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 500px) {
