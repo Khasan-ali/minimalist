@@ -1,0 +1,82 @@
+.contact__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+
+.contact__bottom-heading {
+    margin: 0;
+    color: $primary-color;
+    font-family: Ibarra Real Nova;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 635px;
+    width: 100%;
+}
+
+.contact__label {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.contact__input {
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding-left: 16px;
+    border: none;
+    color: #33323D;
+    height: 48px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    background: rgba($color: #33323D, $alpha: 0.1);
+}
+
+.contact__message {
+    height: 96px;
+}
+
+.contact__btn {
+    padding: 17px 24px;
+    border: none;
+    background: #203A4C;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 850px) {
+    .contact__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+    }    
+
+    .contact__form {
+        max-width: 850px;
+        width: 100%;
+    }
+
+    .contact__bottom-heading {
+        margin-bottom: 32px;
+    }
+
+    .contact__input {
+        max-width: 635px;
+        width: 100%;
+    }
+}
