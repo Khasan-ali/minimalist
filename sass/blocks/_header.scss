@@ -60,10 +60,6 @@
     }
 
     .header__navlink {
-        color: $primary-background;
-    }
-
-    .header__navlink {
         display: none;
     }
 
@@ -76,7 +72,6 @@
         padding: 100px 50px;
         background-color: dimgray;
         border-radius: 10px;
-        color: $primary-background;
         white-space: nowrap;
         top: 100%;
         left: 50%;
